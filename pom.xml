@@ -53,6 +53,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>uuid</finalName>
 	</build>
 
 </project>
