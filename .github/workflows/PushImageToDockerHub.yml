@@ -20,6 +20,6 @@
         - name: Build and push docker image
           uses: docker/build-push-action@v4
           with:
-            context: .
+            context: ./docker
             push: true
             tags: ${{ secrets.DOCKERHUB_USERNAME }}/uuid-centralization:${{ github.event.release.tag_name }}
