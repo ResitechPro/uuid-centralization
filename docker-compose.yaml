@@ -1,7 +1,0 @@
-version: '3'
-services:
-  uuid:
-    image: uuid
-    container_name: uuid
-    ports:
-      - 8080:8080
