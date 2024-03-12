@@ -5,7 +5,7 @@
         - published
   jobs:
     push_to_docker_hub:
-      name: Push To Docker Hub
+      name: Push To Docker Hub v2
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
@@ -20,6 +20,6 @@
         - name: Build and push docker image
           uses: docker/build-push-action@v4
           with:
-            context: ./docker
+            context: .
             push: true
             tags: ${{ secrets.DOCKERHUB_USERNAME }}/uuid-centralization:${{ github.event.release.tag_name }}
